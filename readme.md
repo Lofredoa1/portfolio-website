@@ -25,7 +25,7 @@ Search and compare at least 3 profile web sites.  Record your findings in the ta
 
 Link To Site  | One Thing I'd Like To Incorporate | 
 | ------------- | ------------- |
-| [lianapenn.com](https://www.lianapenn.com/) Ability to interact with the background image on the home screen |
+| [lianapenn.com](https://www.lianapenn.com/) | Ability to interact with the background image on the home screen |
 | [samcasey.info](https://samcasey.info/) | Footer with navigation buttons back to certain sections of the page |
 | [eloise-ress-barrow.surge.sh](http://eloise-ress-barrow.surge.sh/#writing) | Layout of the projects |
 
@@ -35,23 +35,18 @@ Link To Site  | One Thing I'd Like To Incorporate |
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Mobile](https://i.imgur.com/Vm8CJiP.jpg)
+- [Desktop](https://i.imgur.com/GRQKMI1.jpg)
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
+[Link](https://i.imgur.com/FtDdLwq.jpg)
 
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
+Include a full list of features that have been prioritized based on the `Time and Priority` Matrix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
 Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
 
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
+Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's priority is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
 
 Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
@@ -61,47 +56,52 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP (examples)
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Website layout with Bootstrap
+- Interactive navigation bar
+- Mobile/Desktop responsive design
+- Adding formspree for contact info
+- Setup portfolio projects on JSON
+- Add projects with JQuery
+- Add CSS styling to elements
+- Footer navigation bar with quick links
+- Setup skills section with icon images
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Hover effects on projects
+- Carousel effect on project section
+- Mouse over effects on titles/headers
 
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evaluate game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| Website layout with Bootstrap | H | 3hr | hr |
+| Interactive navigation bar | H | 2hr | hr |
+| Mobile/Desktop responsive design | H | 2hr | hr |  
+| Adding formspree for contact info | H | 3hr|  hr | 
+| Setup portfolio projects on JSON | H | 2hr | hr|
+| Add projects with JQuery | H | 2hrs|  hr | 
+| Add CSS styling to elements | L | 3hr | hr | hr |
+| Footer navigation bar with quick links| L | 2hr |  hr |
+| Setup skills section with icon images | H | 2hrs|  hr | 
+| Total | H | 21hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
-| Interactive Banner | M | 4hr | hr |
-| Materialize | H | 4hr | -hr | hr |
-| Bootstrap | H | 4hr | hr |
-| Make own icon | L | 4hr | hr |
-| Total | H | 20hrs| hrs |
+| Hover effects on projects | L | 2hr | hr |
+| Carousel effect on project section| L | 3hr | hr |
+| Mouse over effects on titles/headers| L | 3hr | hr |
+| Total | H | 8hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Use this section to list all supporting libraries and their role in the project. 
 
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
