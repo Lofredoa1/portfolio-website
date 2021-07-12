@@ -60,15 +60,17 @@
     <!-- About section -->
     <div class="container about" style="text-align: center;">
       <p class="about-title" style="font-size: 1.5em">About</p>
-      <p class="about-text">About more text</p>
+      <p class="about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
     <!-- Skills section -->
     <div class="container skills">
       <div class="row justify-content-center" style="font-size: 1.5em">Skills</div>
       <div class="row">
         <div class="col text-center">
-          <img src="https://imgur.com/F0qYB3q" alt="HTML5 logo"
-          width="150" height="150"></br>
+          <!-- <img src="https://imgur.com/F0qYB3q" alt="HTML5 logo"
+          width="150" height="150"></br> -->
           HTML5
         </div>
         <div class="col text-center">skill 2</div>
@@ -80,11 +82,49 @@
     </div>
     <!-- Contact section -->
     <div class="container contact">
-      <!-- insert formspree -->
+      <p class="contact-title" style="font-size: 1.5em;">Let's Connect</p>
+      <!-- formspree HTML -->
+      <form id="my-form" action="https://formspree.io/f/mbjqadvy" method="POST">
+        <label id="form-label">Name:</label>
+        <input type="text" name="name" placeholder="Name"/>
+        <label id="form-label">Email:</label>
+        <input type="email" name="email" placeholder="Email"/>      
+        <label id="form-label">Message:</label>
+        <input type="text" name="message" placeholder="Write a message here" size="30"/>
+        <button id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
     </div>
   </div>
   <footer>
-
+    <div class="row justify-content-center" style="font-size: .8em">anthony.lofredo@gmail.com</div>
+    <div class="row justify-content-center" style="font-size: .8em">
+      <div
+    </div>
   </footer>
+<!-- AJAX code from formspree -->
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+  
 </body>
 </html>
