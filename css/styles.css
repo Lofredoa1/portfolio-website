@@ -9,7 +9,8 @@
 /* Home Styling */
 .container.home {
     background-image: url('https://i.imgur.com/X4QtWAi.jpg'); 
-    background-color: red;
+    background-size: cover;
+    color: white;
 }
 /* Contact Section */
 form {

@@ -47,25 +47,25 @@
   <!-- Bootstrap layout starts -->
   <div class="container-fluid main-content">
     <!-- Home container -->
-    <div class="container w-100 home">
+    <div id="home" class="container w-100 home">
       <div class="row justify-content-center 2em" style="font-size: 2em; padding-top: 30px; padding-bottom: 0px;">Anthony Lofredo</div>
       <div class="row justify-content-center" style="font-size: 1.2em; padding-bottom: 50px;">Some Text</div>
     </div>
     <!-- Projects container -->
-    <div class="container projects">
+    <div id="projects" class="container projects">
       <p>Projects</p>
       <div class="row justify-content-center">1</div>
       <div class="container"></div>
     </div>
     <!-- About section -->
-    <div class="container about" style="text-align: center;">
+    <div id="about" class="container about" style="text-align: center;">
       <p class="about-title" style="font-size: 1.5em">About</p>
       <p class="about-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
     <!-- Skills section -->
-    <div class="container skills">
+    <div id="skills" class="container skills">
       <div class="row justify-content-center" style="font-size: 1.5em">Skills</div>
       <div class="row">
         <div class="col text-center">
@@ -81,7 +81,7 @@
       </div>
     </div>
     <!-- Contact section -->
-    <div class="container contact">
+    <div id="contact" class="container contact">
       <p class="contact-title" style="font-size: 1.5em;">Let's Connect</p>
       <!-- formspree HTML -->
       <form id="my-form" action="https://formspree.io/f/mbjqadvy" method="POST">
@@ -101,11 +101,11 @@
     <div class="row justify-content-center" style="font-size: .8em">anthony.lofredo@gmail.com</div>
     <div class="row" style="font-size: .8em">
       <ul class="footer-nav">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </footer>
