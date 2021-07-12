@@ -54,7 +54,7 @@ Once complete tally up the time and determine how long the project will take to 
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP (examples)
+#### MVP 
 
 - Website layout with Bootstrap
 - Interactive navigation bar
@@ -86,10 +86,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Mobile/Desktop responsive design | H | 2hr | hr |  
 | Adding formspree for contact info | H | 3hr|  hr | 
 | Setup portfolio projects on JSON | H | 2hr | hr|
-| Add projects with JQuery | H | 2hrs|  hr | 
+| Add projects with JQuery | H | 2hr|  hr | 
 | Add CSS styling to elements | L | 3hr | hr | hr |
 | Footer navigation bar with quick links| L | 2hr |  hr |
-| Setup skills section with icon images | H | 2hrs|  hr | 
+| Setup skills section with icon images | H | 2hr|  hr | 
 | Total | H | 21hrs| hrs |
 
 #### PostMVP
