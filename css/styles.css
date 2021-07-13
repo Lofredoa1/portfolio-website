@@ -2,10 +2,12 @@
     box-sizing: border-box;
 }
 
+/* Main page content styling */
 .main-content {
     padding: 0px;
 }
-/* Nav Bar */
+
+/* Nav Bar Styling*/
 .navbar-logo {
     color:rgba(255, 255, 255, 0.938);
     font-weight: 600;
@@ -20,12 +22,21 @@
     letter-spacing: .1em;
     background-color: rgb(12, 12, 12);
 }
+
 /* Home Styling */
 .container.home {
-    background-image: url('https://i.imgur.com/X4QtWAi.jpg'); 
+    background-image: url('https://res.cloudinary.com/dqtisi62i/image/upload/v1626187247/light-abstract-technology_j4jc7v.jpg'); 
     background-size: cover;
     color: white;
+    height: 250px;
+    top: 50px;
 }
+
+/* About Styling */
+.container.about {
+    background-color: lightblue;
+}
+
 /* Contact Section */
 form {
     display: flex;
@@ -61,6 +72,7 @@ ul.footer-nav {
     list-style-type: none;
 }
 
+/* Responsive Design Tablet and Desktop */
 @media screen and (min-width: 1024px) {
 
     #navbarNavAltMarkup {

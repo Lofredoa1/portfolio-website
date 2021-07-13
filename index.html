@@ -16,6 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+    <!-- Local links -->
     <script src="./js/app.js" defer"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -49,13 +50,26 @@
   <div class="container-fluid main-content">
     <!-- Home container -->
     <div id="home" class="container w-100 home">
-      <div class="row justify-content-center 2em" style="font-size: 2em; padding-top: 30px; padding-bottom: 0px;">Anthony Lofredo</div>
-      <div class="row justify-content-center" style="font-size: 1.2em; padding-bottom: 50px;">Some Text</div>
+      <div class="row justify-content-center 2em" style="font-size: 2em; padding-top: 65px; padding-bottom: 0px;">Anthony Lofredo</div>
+      <div class="row justify-content-center" style="font-size: 1.2em; padding-bottom: 50px;">Software Developer</div>
     </div>
     <!-- Projects container -->
     <div id="projects" class="container projects">
-      <p>Projects</p>
-      <div class="row justify-content-center">1</div>
+      <p class="projects-title">Projects</p>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 project1">
+          <img src="" alt="Project1">
+          <h3>Title</h3>
+          <p>Project 1 explanation</p>
+          <div class="container project-icons">
+
+          </div>
+
+        </div>
+        <div class="col-sm-6 col-lg-3 project2">Project 2</div>
+        <div class="col-sm-6 col-lg-3 project3">Project 3</div>
+        <div class="col-sm-6 col-lg-3 project4">Project 4</div>
+      </div>
       <div class="container"></div>
     </div>
     <!-- About section -->
@@ -111,7 +125,7 @@
     </div>
   </footer>
 <!-- AJAX code from formspree -->
-  <script>
+  <!-- <script>
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
@@ -132,7 +146,7 @@
       });
     }
     form.addEventListener("submit", handleSubmit)
-</script>
+</script> -->
   
 </body>
 </html>
