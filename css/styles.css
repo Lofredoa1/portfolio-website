@@ -32,6 +32,12 @@
     top: 50px;
 }
 
+/* Projects Styling */
+p.projects-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 /* About Styling */
 .container.about {
     background-color: lightblue;

@@ -9,7 +9,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description: Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 1| Project Description: Wireframes / Priority Matrix / Timeline | Complete
 |Day 2| Website Layout and Responsive Web Design Layout (HTML/CSS) | Incomplete
 |Day 3| Website Styling and Javascript | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
