@@ -9,19 +9,25 @@ const $project4 = $(".project4");
 $.ajax("./json/projects.json")
     .then((data) => {
         // Populate Project 1
-        const $div = $("<div>");
+        const $div1 = $("<div>");
         const $data1 = data[0];
-        console.log($data1);
-        const $git1 = $("<a>").attr("href", "https://github.com/Lofredoa1/startup-matchmaker").text("Github")
-        console.log()
-        $div.html(`<img class="project-image" src="${$data1.image}"/>
+        $div1.html(`<img class="project-image" src="${$data1.image}"/>
           <h3 class="project-title">${$data1.title}</h3>
           <p class="project-description">${$data1.description}</p>
-          <span><a class="project-github">${$data1.github}</a></span>
-          <span><a class="project-deployed">${$git1[0]}</a></span>`);        
+          <span><a href=${$data1.github} class="project-github">Github</a></span>
+          <span><a href=${$data1.deployed} class="project-deployed">Deployed</a></span>`);        
         // append to the main tag
-        $project1.append($div);
-    console.log(data);
+        $project1.append($div1);
+        // Populate Project 2
+        const $div2 = $("<div>");
+        const $data2 = data[1];
+        $div2.html(`<img class="project-image" src="${$data2.image}"/>
+          <h3 class="project-title">${$data2.title}</h3>
+          <p class="project-description">${$data2.description}</p>
+          <span><a href=${$data2.github} class="project-github">Github</a></span>
+          <span><a href=${$data2.deployed} class="project-deployed">Deployed</a></span>`);        
+        // append to the main tag
+        $project2.append($div2);
   });
     
         

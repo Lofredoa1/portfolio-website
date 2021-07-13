@@ -1,17 +1,17 @@
 [
     {
       "title": "Startup Matchmaker",
-      "description":"HTML and CSS ",
+      "description":"HTML and CSS skills used to create site layout.",
       "github": "https://github.com/Lofredoa1/startup-matchmaker",
       "deployed": "https://startup-matchmaker-psi.vercel.app/",
-      "image": "https://res.cloudinary.com/dqtisi62i/image/upload/v1626193837/Startup_Matchmaker_bqpdxh.png"
+      "image": "./img/Startup Matchmaker.png"
     },
     {
       "title": "Responsive Web Design",
-      "description":"Responsive web design for mobile, tablet, and desktop",
+      "description":"Responsive web design for mobile, tablet, and desktop.",
       "github": "https://github.com/Lofredoa1/responsive-web-design",
       "deployed": "https://responsive-web-design.vercel.app/",
-      "image": ""
+      "image": "./img/responsivedesign.png"
     },
     {
       "title": "...",

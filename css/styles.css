@@ -57,8 +57,50 @@ p.projects-title {
 .about-text {
     text-align: center;
     line-height: 2em;
+    font-size: 1.5em;
 }
 
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.skill-item {
+    object-fit: cover;
+    height: 100%;
+    width: 80%;
+    padding: 2em;
+
+}
+
+/* .skill-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.skill-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.skill-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.skill-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+} */
+
+
+.skillitem {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100% ;
+}
 /* Contact Section */
 form {
     display: flex;
