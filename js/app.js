@@ -1,34 +1,30 @@
 // Project Storage
-// Save the Main element in a variable
-  const $project1 = $("project1");
+// Main containers
+const $project1 = $(".project1");
+const $project2 = $(".project2");
+const $project3 = $(".project3");
+const $project4 = $(".project4");
 
-  // Asynchronous Request the data from our JSON file
-  $.ajax("./json/projects.json")
-    // specify what to do with data once request is completed (... and then...)
-    .then((data[0]) => {
+// Asynchronous Request the data from our JSON file
+$.ajax("./json/projects.json")
+    .then((data) => {
+        // Populate Project 1
         const $div = $("<div>");
-        // generate the html we want in each div with that movies data
-        $div.html(`<img class="project-image" src="${image}"/>
-          <h2 class="project-title">${title}</h2>
-          <p class="project-description">${description}</p>`);
+        const $data1 = data[0];
+        console.log($data1);
+        const $git1 = $("<a>").attr("href", "https://github.com/Lofredoa1/startup-matchmaker").text("Github")
+        console.log()
+        $div.html(`<img class="project-image" src="${$data1.image}"/>
+          <h3 class="project-title">${$data1.title}</h3>
+          <p class="project-description">${$data1.description}</p>
+          <span><a class="project-github">${$data1.github}</a></span>
+          <span><a class="project-deployed">${$git1[0]}</a></span>`);        
         // append to the main tag
         $project1.append($div);
-      
-    //     // Loop over the data since it is an array
-    //   data.forEach((movie) => {
-    //     // create a new div to hold the movie
-    //     const $div = $("<div>");
-    //     // generate the html we want in each div with that movies data
-    //     $div.html(`<h2 class="movie-title">${movie.title}</h2>
-    //       <h3 class="movie-release">${movie.release_year}</h3>
-    //       <img class="movie-image" src="${movie.image}"/>`);
-    //     // append to the main tag
-    //     $main.append($div);
-      });
-    });
-
-
-
+    console.log(data);
+  });
+    
+        
 
 // Formspree code from Fromspree
 

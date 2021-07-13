@@ -38,21 +38,39 @@ p.projects-title {
     text-align: center;
 }
 
+.projects {
+    width: 60%
+}
+
+.project-image {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
 /* About Styling */
 .container.about {
     background-color: lightblue;
+}
+
+.about-text {
+    text-align: center;
+    line-height: 2em;
 }
 
 /* Contact Section */
 form {
     display: flex;
     flex-direction: column;
-    line-height: 2em;
-    padding: 0px 25px 25px 25px;
+    justify-content: space-around;
+    line-height: 1.5em;
+    padding: 0px 50px;
 }
 
 .container.contact {
     padding: 10px;
+    margin: auto;
     background-color: rgb(226, 229, 229);
 }
 
@@ -68,14 +86,43 @@ form {
 
 #my-form-button {
     margin-top: 20px;
+    /* box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.4); */
+    border:black;
+    transition-duration: 0.4s;
+    background-color: #47484c;
+    color: white;
+    width: 50%;
+    align-self: center;
+}
+
+#my-form-button:hover {
+    background-color: white;
+    color: black
+  }
+
+#my-form-status {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    align-self: center;
 }
 
 /* Footer Styling */
+footer {
+    background-color: black;
+}
 ul.footer-nav {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     list-style-type: none;
+}
+footer div {
+    color: white;
+    padding-top: 10px;
+}
+.footer-nav li a {
+    text-decoration: none;
+    color: white
 }
 
 /* Responsive Design Tablet and Desktop */
