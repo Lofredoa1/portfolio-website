@@ -33,8 +33,12 @@ button.navbar-toggler {
     background-image: url('https://res.cloudinary.com/dqtisi62i/image/upload/v1626187247/light-abstract-technology_j4jc7v.jpg'); 
     background-size: cover;
     color: white;
-    height: 250px;
-    top: 50px;
+    height: 200px;
+    padding-top: 0px;
+}
+
+.home-name {
+    font-size: 1.8em;
 }
 
 /* Projects Styling */
@@ -68,7 +72,7 @@ p.project-description {
 }
 
 .project-github , .project-deployed {
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 .project4 {
@@ -229,6 +233,14 @@ footer div {
         padding-top: 60px;
     }
 
+    .home-name {
+        font-size: 3.3em;
+    }
+
+    .home-description {
+        font-size: 1.6em;
+    }
+
     /* Project styling */
     .projects {
         width: 80%
@@ -241,6 +253,12 @@ footer div {
     p.projects-title {
         font-size: 2.5em;
     }
+
+    img.project-image {
+        height: 250px;
+        width: 250px;
+        object-fit: contain;
+    } 
 
     .project1 , .project2 , .project3 , .project4 {
         /* height: 500px; */
@@ -256,7 +274,10 @@ footer div {
         width: 80%; */
         
     }
-
+    /* About styling */
+    .about-text {
+        padding: 0px 50px;
+    }
     /* Contact styling */
     .container.contact {
         margin-bottom: 50px;
@@ -266,7 +287,71 @@ footer div {
 
 @media screen and (min-width: 1024px) {
 
+    /* Navbar styling */
     #navbarNavAltMarkup {
         justify-content: flex-end;
+    }
+
+    a.nav-link {
+        margin-right: 50px;
+    }
+
+    /* Home styling */
+    .container.home {
+        height: 500px;
+        /* margin-right: 0; */
+        /* margin-left: 0; */
+    }
+
+    .home-name {
+        font-size: 4em;
+    }
+
+    .home-description {
+        font-size: 2em;
+    }
+
+    #home {
+        padding-top: 110px;
+    }
+    /* Project styling */
+    p.projects-title {
+        font-size: 4em;
+    }
+
+    .project-github , .project-deployed {
+        margin-left: 25px;
+    }
+
+    img.project-image {
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+    }
+    /* About styling */
+    .about-title {
+        font-size: 3em;
+        margin-top: 30px;
+    }
+    .about-text {
+        padding: 0px 75px;
+        line-height: 2.5em;
+        font-size: 1.4em;
+    }
+    /* Skills styling */
+    .skill-title {
+        font-size: 3em;
+    }
+
+    .skills-grid {
+        grid-template-rows: 300px 300px 300px;
+    }
+
+    div.skill p {
+        font-size: 1.1em;
+    }
+    /* Contact styling */
+    div#contact.container.contact {
+        width: 60%;
     }
 }
