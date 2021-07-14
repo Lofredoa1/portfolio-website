@@ -4,7 +4,7 @@
 
 /* Main page content styling */
 .main-content {
-    padding: 0px;
+    padding: 0;
 }
 
 /* Nav Bar Styling*/
@@ -71,9 +71,13 @@ p.project-description {
     margin-left: 35px;
 }
 
+.project4 {
+    padding-bottom: 35px;
+}
 /* About Styling */
 .container.about {
     background-color: #0074D9;
+    margin: 0;
 }
 
 .about-title {
@@ -83,12 +87,14 @@ p.project-description {
     padding-top: 10px;
     margin-bottom: 0px;
     color: #DDDDDD;
+    width: 100%;
 }
 .about-text {
     text-align: center;
     line-height: 2em;
     font-size: 1em;
-    color: #DDDDDD
+    color: #DDDDDD;
+    padding-bottom: 10px;
 }
 
 /* Skills Section */
@@ -168,6 +174,7 @@ form input {
     color: white;
     width: 50%;
     align-self: center;
+    padding: 10px 0;
 }
 
 #my-form-button:hover {
@@ -201,6 +208,62 @@ footer div {
 }
 
 /* Responsive Design Tablet and Desktop */
+@media screen and (min-width: 768px) {
+    /* Navbar styling */
+    .navbar-nav a {
+        margin-left: 25px;
+    }
+
+    .nav-open {
+        background-color: transparent;
+    }
+
+    /* Home styling */
+    .container.home {
+        height: 400px;
+        width: 100%;
+        /* margin: 0; */
+    }
+
+    #home {
+        padding-top: 60px;
+    }
+
+    /* Project styling */
+    .projects {
+        width: 80%
+    }
+
+    .project-github , .project-deployed {
+        margin-left: 55px;
+    }
+
+    p.projects-title {
+        font-size: 2.5em;
+    }
+
+    .project1 , .project2 , .project3 , .project4 {
+        /* height: 500px; */
+    }
+
+    .project1 div , .project2 div , .project3 div , .project4 div {
+        /* height: 80%; */
+        
+    }
+
+    .project-image {
+        /* height: 80%;
+        width: 80%; */
+        
+    }
+
+    /* Contact styling */
+    .container.contact {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
 
     #navbarNavAltMarkup {
