@@ -14,17 +14,17 @@
       "image": "./img/responsivedesign.png"
     },
     {
-      "title": "...",
-      "description":"...",
-      "github": "https://",
-      "deployed": "https://",
-      "image": ""
+      "title": "LOTR Adventure",
+      "description":"Interactive web adventure using Javascript to trigger events.",
+      "github": "https://github.com/Lofredoa1/LOTR-Website",
+      "deployed": "https://lotr-website.vercel.app/",
+      "image": "./img/LOTR.png"
     },
     {
-      "title": "...",
-      "description":"...",
-      "github": "https://",
-      "deployed": "https://",
-      "image": ""
+      "title": "CSS Grid",
+      "description":"Using CSS Grid layout to layout content.",
+      "github": "https://github.com/Lofredoa1/css-grid",
+      "deployed": "https://css-grid-kappa.vercel.app/",
+      "image": "./img/css-grid.png"
     }
   ]

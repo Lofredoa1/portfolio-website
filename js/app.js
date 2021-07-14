@@ -28,9 +28,27 @@ $.ajax("./json/projects.json")
           <span><a href=${$data2.deployed} class="project-deployed">Deployed</a></span>`);        
         // append to the main tag
         $project2.append($div2);
+        // Populate Project 3
+        const $div3 = $("<div>");
+        const $data3 = data[2];
+        $div3.html(`<img class="project-image" src="${$data3.image}"/>
+          <h3 class="project-title">${$data3.title}</h3>
+          <p class="project-description">${$data3.description}</p>
+          <span><a href=${$data3.github} class="project-github">Github</a></span>
+          <span><a href=${$data3.deployed} class="project-deployed">Deployed</a></span>`);        
+        // append to the main tag
+        $project3.append($div3);
+        // Populate Project 4
+        const $div4 = $("<div>");
+        const $data4 = data[3];
+        $div4.html(`<img class="project-image" src="${$data4.image}"/>
+          <h3 class="project-title">${$data4.title}</h3>
+          <p class="project-description">${$data4.description}</p>
+          <span><a href=${$data4.github} class="project-github">Github</a></span>
+          <span><a href=${$data4.deployed} class="project-deployed">Deployed</a></span>`);        
+        // append to the main tag
+        $project4.append($div4);
   });
-    
-        
 
 // Formspree code from Fromspree
 
