@@ -10,8 +10,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description: Wireframes / Priority Matrix / Timeline | Complete
-|Day 2| Website Layout and Responsive Web Design Layout (HTML/CSS) | Incomplete
-|Day 3| Website Styling and Javascript | Incomplete
+|Day 2| Website Layout and Responsive Web Design Layout (HTML/CSS) | Complete
+|Day 3| Website Styling and Javascript | Complete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches & Present | Incomplete
 
@@ -81,16 +81,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Website layout with Bootstrap | H | 3hr | hr |
-| Interactive navigation bar | H | 2hr | hr |
-| Mobile/Desktop responsive design | H | 2hr | hr |  
-| Adding formspree for contact info | H | 3hr|  hr | 
-| Setup portfolio projects on JSON | H | 2hr | hr|
-| Add projects with JQuery | H | 2hr|  hr | 
-| Add CSS styling to elements | L | 3hr | hr | hr |
-| Footer navigation bar with quick links| L | 2hr |  hr |
-| Setup skills section with icon images | H | 2hr|  hr | 
-| Total | H | 21hrs| hrs |
+| Website layout with Bootstrap | H | 3hr | 4hr |
+| Interactive navigation bar | H | 2hr | 2hr |
+| Mobile/Desktop responsive design | H | 2hr | 2hr |  
+| Adding formspree for contact info | H | 3hr|  1hr | 
+| Setup portfolio projects on JSON | H | 2hr | 2hr|
+| Add projects with JQuery | H | 2hr|  2hr | 
+| Add CSS styling to elements | L | 3hr | 3hr |
+| Footer navigation bar with quick links| L | 2hr |  1hr |
+| Setup skills section with icon images | H | 2hr|  2hr | 
+| Total | H | 21hrs| 19hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
@@ -101,19 +101,33 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 8hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and their role in the project. 
+Bootstrap - Front end toolkit to help design responsive mobile-first sites through HTML.
+	-Used for site layout
+JQuery - Javascript library to manipulate HMTL elements in Javascript
+	-used to make AJAX call to load project data
+	-used to add HTML elements with portfolio projects
+
 
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const $project1 = $(".project1");
+
+$.ajax("./json/projects.json")
+    .then((data) => {
+        // Populate Project 1
+        const $div1 = $("<div>");
+        const $data1 = data[0];
+        $div1.html(`<img class="project-image" src="${$data1.image}"/>
+          <h3 class="project-title">${$data1.title}</h3>
+          <p class="project-description">${$data1.description}</p>
+          <span><a href=${$data1.github} class="project-github">Github</a></span>
+          <span><a href=${$data1.deployed} class="project-deployed">Deployed</a></span>`);        
+        // append to the main tag
+        $project1.append($div1);
 ```
 
-## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+Example of how projects were pulled with an AJAX call to populate my portfolio website.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+## Issues and Resolutions
+Having difficulty sizing a carousel for desktop only view.

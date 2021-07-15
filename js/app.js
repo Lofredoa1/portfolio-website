@@ -48,6 +48,9 @@ $.ajax("./json/projects.json")
           <span><a href=${$data4.deployed} class="project-deployed">Deployed</a></span>`);        
         // append to the main tag
         $project4.append($div4);
+
+        // Carousel layout
+        
   });
 
 // Formspree code from Fromspree

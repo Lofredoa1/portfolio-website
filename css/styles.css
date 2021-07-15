@@ -81,7 +81,6 @@ p.project-description {
 /* About Styling */
 .container.about {
     background-color: #0074D9;
-    margin: 0;
 }
 
 .about-title {
@@ -260,23 +259,9 @@ footer div {
         object-fit: contain;
     } 
 
-    .project1 , .project2 , .project3 , .project4 {
-        /* height: 500px; */
-    }
-
-    .project1 div , .project2 div , .project3 div , .project4 div {
-        /* height: 80%; */
-        
-    }
-
-    .project-image {
-        /* height: 80%;
-        width: 80%; */
-        
-    }
     /* About styling */
     .about-text {
-        padding: 0px 50px;
+        padding: 0px 50px 20px 50px;
     }
     /* Contact styling */
     .container.contact {
@@ -323,11 +308,17 @@ footer div {
         margin-left: 25px;
     }
 
-    img.project-image {
-        height: 150px;
-        width: 150px;
-        object-fit: contain;
+    #carouselExampleIndicators {
+        max-height: 600px;
+        background-color: lightblue;
     }
+
+    .carousel-inner > div > img {
+        max-height: 500px;
+        background-position: center;
+        object-fit: contain;
+    } 
+
     /* About styling */
     .about-title {
         font-size: 3em;
