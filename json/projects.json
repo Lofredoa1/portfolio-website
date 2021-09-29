@@ -1,24 +1,24 @@
 [
     {
-      "title": "Startup Matchmaker",
-      "description":"HTML and CSS skills used to create site layout.",
-      "github": "https://github.com/Lofredoa1/startup-matchmaker",
-      "deployed": "https://startup-matchmaker-psi.vercel.app/",
-      "image": "./img/Startup Matchmaker.png"
+      "title": "Big Bookshelf",
+      "description":"A book exchange created on Python with FastAPI.",
+      "github": "https://github.com/Lofredoa1/big_bookshelf_frontend",
+      "deployed": "https://big-bookshelf-frontend.vercel.app/",
+      "image": "./img/Big-bookshelf.png"
     },
     {
-      "title": "Responsive Web Design",
-      "description":"Responsive web design for mobile, tablet, and desktop.",
-      "github": "https://github.com/Lofredoa1/responsive-web-design",
-      "deployed": "https://responsive-web-design.vercel.app/",
-      "image": "./img/responsivedesign.png"
+      "title": "Plantie",
+      "description":"Plant health app built using React.",
+      "github": "https://github.com/davidvdev/plant-app-frontend",
+      "deployed": "https://plant-app-frontend-seven.vercel.app/",
+      "image": "./img/plantie.png"
     },
     {
-      "title": "LOTR Adventure",
+      "title": "MLB Stat History",
       "description":"Interactive web adventure using Javascript to trigger events.",
-      "github": "https://github.com/Lofredoa1/LOTR-Website",
-      "deployed": "https://lotr-website.vercel.app/",
-      "image": "./img/LOTR.png"
+      "github": "https://github.com/Lofredoa1/project2",
+      "deployed": "https://github.com/Lofredoa1/project2",
+      "image": "./img/mlbstats.png"
     },
     {
       "title": "CSS Grid",
